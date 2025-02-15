@@ -116,6 +116,7 @@ function sendToSalebot(message, clientId) {
 				'Content-Type': 'application/json',
 				'Content-Length': data.length,
 			},
+			family: 4, // ДОБАВЬ ЭТУ СТРОКУ
 		};
 
 		const req = https.request(options, (res) => {
